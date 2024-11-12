@@ -1,0 +1,7 @@
+#imagemCarregada{
+    max-width: 550px;
+    max-height: 550px;
+}
+#inputImage{
+    display: none;
+}
