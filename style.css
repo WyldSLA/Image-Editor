@@ -5,3 +5,7 @@
 #inputImage{
     display: none;
 }
+
+canvas{
+    border: 2px solid red;
+}
