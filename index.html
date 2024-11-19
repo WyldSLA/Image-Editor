@@ -10,11 +10,13 @@
     <h1>Image Editor</h1>
     <div class="filtros">
         <h2>Filtros</h2>
-        <button>Brilho</button>
-        <button>Contraste</button>
-        <button>Saturação</button>
-        <button>Inversão</button>
-        <input type="range" value="100" min="0" max="200">
+        <button id="brilho">Brilho</button>
+        <button id="saturacao">Saturação</button>
+        <button id="inversao">Inversão</button>
+        <button id="cinza">Cinza</button>
+        <span id="msgfiltro">Brilho</span>
+        <input type="range" value="100" min="0" max="200" id="medidor">
+        <span id="msgmedidor">100%</span>
     </div>
 
     <img src="#" alt="Image" id="imagemCarregada">
