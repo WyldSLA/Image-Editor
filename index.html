@@ -8,16 +8,22 @@
 </head>
 <body>
     <h1>Image Editor</h1>
-    <input type="file" id="inputImage" accept="image/*">
-    <button id="open">Abrir</button>
-    <button id="save">Salvar</button>
-    
+    <div class="filtros">
+        <h2>Filtros</h2>
+        <button>Brilho</button>
+        <button>Contraste</button>
+        <button>Saturação</button>
+        <button>Inversão</button>
+        <input type="range" value="100" min="0" max="200">
+    </div>
+
     <img src="#" alt="Image" id="imagemCarregada">
-    <button id="cinza">Cinza</button>
-    <button id="inverterCores">Inverter Cores</button>
-    <button id="contraste">Contraste</button>
-    <button>Filtro4</button>
-    <button>Filtro5</button>
+
+    <div class="interacoes">
+        <input type="file" id="inputImage" accept="image/*">
+        <button id="abrir">Abrir</button>
+        <button id="salvar">Salvar</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
