@@ -78,9 +78,11 @@ const salvarImg = () => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
     canvas.width = imgCarregada.naturalWidth;
-    canvas.height = imgCarregada.naturalHeigth;
+    canvas.height = imgCarregada.naturalHeight;
+
     ctx.filter =  `brightness(${brilho}%) saturate(${saturacao}%) invert(${inversao}%) grayscale(${escalacinza}%)`
     ctx.drawImage(imgCarregada, 0, 0, canvas.width, canvas.height)
+    
     const link = document.createElement("a")
     link.download = "imagem-editada.png"
     link.href = canvas.toDataURL("image/png")
