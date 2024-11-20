@@ -71,6 +71,7 @@ const updateFiltros = () => {
 const resetarFiltros = () => {
     brilho = 100, saturacao = 100, inversao = 0, escalacinza = 0;
     filtroAtual = 'brilho';
+    btnsFiltros[0].click()
     aplicarFiltros();
 }
 
@@ -82,7 +83,7 @@ const salvarImg = () => {
 
     ctx.filter =  `brightness(${brilho}%) saturate(${saturacao}%) invert(${inversao}%) grayscale(${escalacinza}%)`
     ctx.drawImage(imgCarregada, 0, 0, canvas.width, canvas.height)
-    
+
     const link = document.createElement("a")
     link.download = "imagem-editada.png"
     link.href = canvas.toDataURL("image/png")
