@@ -104,7 +104,7 @@ const salvarImg = () => {
     canvas.width = imgCarregada.naturalWidth;
     canvas.height = imgCarregada.naturalHeight;
 
-    ctx.filter =  `brightness(${brilho}%) saturate(${saturacao}%) invert(${inversao}%) grayscale(${escalacinza}%)sepia(${sepia}%) blur(${desfoque}px) contrast(${contraste}%)`
+    ctx.filter =  `brightness(${brilho}%) saturate(${saturacao}%) invert(${inversao}%) grayscale(${escalacinza}%) sepia(${sepia}%) blur(${desfoque}px) contrast(${contraste}%)`
     ctx.drawImage(imgCarregada, 0, 0, canvas.width, canvas.height)
 
     const link = document.createElement("a")
