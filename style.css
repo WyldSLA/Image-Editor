@@ -28,12 +28,7 @@ body{
   opacity: 0.5;
   pointer-events: none;
 }
-.container-editor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 15px;
-}
+
 .container h2{
     margin-top: -8px;
     font-size: 22px;
@@ -43,6 +38,12 @@ body{
     display: flex;
     margin: 20px 0;
     min-height: 335px;
+}
+.wrapper .editor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
 }
 .filtros{
     padding: 15px 20px;
@@ -97,7 +98,7 @@ body{
     accent-color: #5372F0;
 }
 
-.filtros .verImg{
+.wrapper .verImg{
     flex-grow: 1;
     display: flex;
     overflow: hidden;
@@ -106,6 +107,7 @@ body{
     align-items: center;
     justify-content:end;
 }
+
 .verImg img{
     max-width: 490px;
     max-height: 335px;
@@ -113,10 +115,7 @@ body{
     height: 100%;
     object-fit: contain;
 }
-#imagemCarregada{
-    max-width: 550px;
-    max-height: 550px;
-}
+
 .controles button{
     padding: 11px 20px;
     font-size: 14px;
@@ -129,19 +128,19 @@ body{
     text-transform: uppercase;
 }
 
-.controles .resetar{
+.controles #resetar{
     color: #6C757D;
     border: 1px solid #6C757D;
 }
-.controles .resetar:hover{
+.controles #resetar:hover{
     color: #fff;
     background: #6C757D;
 }
-.controles .abrir{
-    background: #6C757D;
+.controles #abrir{
+    background: #057feb;
     border: 1px solid #6C757D;
 }
-.controles .salvar{
+.controles #salvar{
     margin-left: 5px;
     background: #5372F0;
     border: 1px solid #5372F0;

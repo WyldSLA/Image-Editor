@@ -26,6 +26,9 @@ const carregarImg = () => {
     const leitor = new FileReader();
     leitor.onload = function () {
         imgCarregada.src = leitor.result;
+        imgCarregada.addEventListener('load', () => {
+            document.querySelector('.container').classList.remove("disable")
+        })
         resetarFiltros()
     };
     leitor.readAsDataURL(arquivo);
@@ -33,6 +36,8 @@ const carregarImg = () => {
 
 btnsFiltros.forEach(btn => {
     btn.addEventListener('click', () => {
+        document.querySelector('.btn-filtros .active').classList.remove("active")
+        btn.classList.add("active")
         filtroAtual = btn.id; 
         nomeFiltro.innerText = btn.innerText;
 
