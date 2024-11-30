@@ -1,4 +1,171 @@
-#imagemCarregada{
-    max-width: 550px;
-    max-height: 550px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body{
+    display: flex;
+    padding: 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FD;
+}
+
+.container{
+    width: 850px;
+    padding: 30px 35px 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.container.disable .filtros,
+.container.disable .controles .resetar,
+.container.disable .controles .salvar{
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.container h2{
+    margin-top: -8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.container .wrapper{
+    display: flex;
+    margin: 20px 0;
+    min-height: 335px;
+}
+.wrapper .editor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+.filtros{
+    padding: 15px 20px;
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.filtros .tittleFiltros{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.filtros .btn-filtros, .controles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.filtros button{
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    color: #6C757D;
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    border: 1px solid #aaa;
+}
+
+.filtros button{
+    width: calc(100% / 2 - 4px);
+}
+.filtros button:hover{
+    background: #f5f5f5;
+}
+.filtros button.active{
+    color: #fff;
+    border-color: #5372F0;
+    background: #5372F0;
+}
+.filtros .ajuste{
+    margin-top: 12px;
+}
+.filtros .ajuste .nomeFiltro{
+    display: flex;
+    color: #464646;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.filtros .ajuste input{
+    width: 100%;
+    height: 5px;
+    accent-color: #5372F0;
+}
+
+.wrapper .verImg{
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content:end;
+}
+
+.verImg img{
+    max-width: 490px;
+    max-height: 335px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.controles button{
+    padding: 11px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.controles #resetar{
+    color: #6C757D;
+    border: 1px solid #6C757D;
+}
+.controles #resetar:hover{
+    color: #fff;
+    background: #6C757D;
+}
+.controles #abrir{
+    background: #057feb;
+    border: 1px solid #6C757D;
+}
+.controles #salvar{
+    margin-left: 5px;
+    background: #057feb;
+    border: 1px solid #5372F0;
+}
+
+@media screen and (max-width: 760px) {
+    .container{
+      padding: 25px;
+    }
+    .container .filtros{
+      flex-wrap: wrap-reverse;
+    }
+    .filtros {
+      width: 100%;
+    }
+    .filtros .verImg{
+      width: 100%;
+      margin: 0 0 15px;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+    .controles button{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
 }

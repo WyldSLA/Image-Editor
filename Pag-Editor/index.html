@@ -1,40 +1,44 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Editor Image</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner">
+    <div class="container disable">
         <h1>Image Editor</h1>
-        <div class="filtros">
-            <label for="tittleFiltros">Filtros</label>
-            <div class="btn-filtros">
-                <button id="brilho">Brilho</button>
-                <button id="saturacao">Saturação</button>
-                <button id="inversao">Inversão</button>
-                <button id="cinza">Cinza</button>
-            </div>
-            <div class="ajuste">
-                <span class="nomeFiltro">Brilho</span>
-                <input type="range" value="100" min="0" max="200" id="medidor">
-                <span id="valorMedidor">100%</span>
+        <div class="wrapper">
+            <div class="editor">
+                <div class="filtros">
+                    <label for="tittleFiltros">Filtros</label>
+                    <div class="btn-filtros">
+                        <button id="brilho" class="active">Brilho</button>
+                        <button id="saturacao">Saturação</button>
+                        <button id="inversao">Inversão</button>
+                        <button id="cinza">Cinza</button>
+                        <button id="sepia">Sépia</button>
+                        <button id="blur">Desfoque</button>
+                        <button id="contraste">Contraste</button>
+                    </div>
+                    <div class="ajuste">
+                        <span class="nomeFiltro">Brilho</span>
+                        <span id="valorMedidor">100%</span>
+                        <input type="range" value="100" min="0" max="200" id="medidor">
+                    </div>
+                </div>
+            
+                <div class="verImg">
+                    <img src="image-placeholder.svg" alt="Image" id="imagemCarregada">
+                </div>
             </div>
         </div>
-        
-        <div class="verImg">
-            <img src="image-placeholder.svg" alt="Image" id="imagemCarregada">         
-        </div>
-
         <div class="controles">
             <input type="file" id="inputImg" accept="image/*" hidden>
             <button id="resetar">Resetar filtros</button>
-            <button id="abrir">Abrir</button>
-            <button id="salvar">Salvar</button>
+            <div class="linha">
+                <button id="abrir">Escolher Imagem</button>
+                <button id="salvar">Salvar</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
-</body>
-</html>
