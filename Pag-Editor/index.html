@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Image Editor</h1>
+        <div class="filtros">
+            <label for="tittleFiltros">Filtros</label>
+            <div class="btn-filtros">
+                <button id="brilho">Brilho</button>
+                <button id="saturacao">Saturação</button>
+                <button id="inversao">Inversão</button>
+                <button id="cinza">Cinza</button>
+            </div>
+            <div class="ajuste">
+                <span class="nomeFiltro">Brilho</span>
+                <input type="range" value="100" min="0" max="200" id="medidor">
+                <span id="valorMedidor">100%</span>
+            </div>
+        </div>
+        
+        <div class="verImg">
+            <img src="image-placeholder.svg" alt="Image" id="imagemCarregada">         
+        </div>
+
+        <div class="controles">
+            <input type="file" id="inputImg" accept="image/*" hidden>
+            <button id="resetar">Resetar filtros</button>
+            <button id="abrir">Abrir</button>
+            <button id="salvar">Salvar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
