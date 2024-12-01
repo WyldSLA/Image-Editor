@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edições de Imagens</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid red;
+    }
+    .circle {
+      width: 500px;
+      height: 500px;
+      background-color: #21252B;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 20px;
+      left: 50%;
+    }
+    .image-container {
+      position: relative;
+      z-index: 2;
+    }
+    img {
+      width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle"></div>
+    <div class="image-container">
+      <img src="Img-editor/img-editor.jpg" alt="Imagem">
+    </div>
+  </div>
+</body>
+</html>
