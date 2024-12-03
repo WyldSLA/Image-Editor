@@ -109,8 +109,8 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    width: 862px;
+    justify-content: space-evenly;
+    width: 850px;
     height: 380px;
 }
 
