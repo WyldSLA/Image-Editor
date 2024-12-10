@@ -60,49 +60,47 @@ header h1{
 
 .container-atividades{
     width: 100%;
-    height: 506px;
+    height: 624px;
     padding: 16px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 32px;
-}
-
-.title-atv{
-    text-align: center;
+    gap: 24px;
 }
 
 .title-atv h2{
     font-size: 1.8rem;
     margin-bottom: 8px;
+    text-align: center;
 }
 
-.title-atv p{
-    font-size: 1.1rem;
+.desc-atv p{
+    text-align: center;
+    max-width: 376px;
+    font-size: 1rem;
 }
 
 .black-background{
     background-color: #21252B;
     color: #EEEDED;
 }
-#atv-mesclagem .title-atv{
-    order: 1;
-}
+
 #atv-filtros{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 57px;
-    height: 953px;
+    gap: 48px;
+    height: 1370px;
 }
 
 .container-filtro{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 24px;
 }
 
 .box-imgs{
@@ -110,8 +108,7 @@ header h1{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 850px;
-    height: 380px;
+    width: 950px;
 }
 
 .atv-imagem img{
@@ -120,8 +117,26 @@ header h1{
     height: 300px;
     border-radius: 8px;
 }
+.filtro {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 .filtro img{
     object-fit: cover;
     width: 250px;
     height: 170px;
+}
+.filtro h3{
+    font-size: 1rem;
+    text-align: center;
+}
+.filtro p {
+    max-width: 180px;
+    height: 140px;
+    font-size: 0.8rem;
+    text-align: center;
 }
