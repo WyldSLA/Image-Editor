@@ -119,6 +119,7 @@ header h1{
     height: 300px;
     border-radius: 8px;
 }
+
 .filtro {
     padding: 18px;
     display: flex;
@@ -128,20 +129,51 @@ header h1{
     gap: 8px;
 
 }
+
 .filtro img{
     object-fit: cover;
     width: 250px;
     height: 170px;
 }
+
 .desc-filtro{
     width: 250px;
     height: 120px;
     text-align: center;
 }
+
 .desc-filtro h3{
     font-size: 1rem;
     margin-bottom: 4px;
 }
+
 .desc-filtro p {
     font-size: 0.8rem;
+}
+
+.aluno-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 6px;
+}
+
+.aluno-link a{
+    text-decoration: none;
+    color: #F4F3F3;
+    padding: 8px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aluno-link a:hover{
+    background-color: #eeedede8;
+    color: #000000;
 }
